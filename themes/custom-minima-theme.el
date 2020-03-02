@@ -91,7 +91,7 @@ determine the exact padding."
       (if (integerp doom-one-padded-modeline) doom-one-padded-modeline 4)))
 
    (modeline-fg     fg)
-   (modeline-fg-alt base5)
+   (modeline-fg-alt base0)
 
    (modeline-bg
     (if -modeline-bright
