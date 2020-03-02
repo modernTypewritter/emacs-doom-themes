@@ -1,7 +1,7 @@
 ;;; custom-theme.el --- modified from doom-one -*- no-byte-compile: t; -*-
 (require 'doom-themes)
 
-;;
+;;; Code:
 (defgroup doom-one-theme nil
   "Options for doom-themes"
   :group 'doom-themes)
@@ -17,8 +17,7 @@
   :type 'boolean)
 
 (defcustom doom-one-comment-bg doom-one-brighter-comments
-  "If non-nil, comments will have a subtle, darker background. Enhancing their
-legibility."
+  "If non-nil, comments will have a subtle, darker background. Enhancing their legibility."
   :group 'doom-one-theme
   :type 'boolean)
 
@@ -65,7 +64,7 @@ determine the exact padding."
    (vertical-bar   (doom-darken base1 0.1))
    (selection      dark-blue)
    (builtin        magenta)
-   (comments       (if doom-one-brighter-comments dark-cyan base5))
+   (comments       (if doom-one-brighter-comments dark-cyan base8))
    (doc-comments   (doom-lighten (if doom-one-brighter-comments dark-cyan base5) 0.25))
    (constants      violet)
    (functions      magenta)
@@ -103,7 +102,7 @@ determine the exact padding."
         (doom-darken blue 0.45)
       `(,(doom-darken (car bg-alt) 0.1) ,@(cdr base0))))
    (modeline-bg-inactive   `(,(doom-darken (car bg-alt) 0.1) ,@(cdr bg-alt)))
-   (modeline-bg-inactive-l `(,(car bg-alt) ,@(cdr base1))))
+   (modeline-bg-inactive-l `(,(car bg-alt) ,@(cdr base0))))
 
 
   ;; --- extra faces ------------------------
